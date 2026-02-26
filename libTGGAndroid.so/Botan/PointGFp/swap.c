@@ -1,0 +1,56 @@
+// Package: Botan::PointGFp
+
+long* Botan::PointGFp::swap(long* param0, long* param1) {
+    long v0 = *param0;
+    *param0 = *param1;
+    *param1 = v0;
+    long v1 = *(param0 + 1);
+    *(param0 + 1) = *(param1 + 1);
+    *(param1 + 1) = v1;
+    long v2 = *(param0 + 2);
+    *(param0 + 2) = *(param1 + 2);
+    *(param1 + 2) = v2;
+    long v3 = *(param0 + 3);
+    *(param0 + 3) = *(param1 + 3);
+    *(param1 + 3) = v3;
+    long v4 = *(param0 + 4);
+    *(param0 + 4) = *(param1 + 4);
+    *(param1 + 4) = v4;
+    long v5 = *(param0 + 5);
+    *(param0 + 5) = *(param1 + 5);
+    *(param1 + 5) = v5;
+    int v6 = *(int*)(param0 + 6);
+    *(int*)(param0 + 6) = *(int*)(param1 + 6);
+    *(int*)(param1 + 6) = v6;
+    long v7 = *(param0 + 7);
+    *(param0 + 7) = *(param1 + 7);
+    *(param1 + 7) = v7;
+    long v8 = *(param0 + 8);
+    *(param0 + 8) = *(param1 + 8);
+    *(param1 + 8) = v8;
+    long v9 = *(param0 + 9);
+    *(param0 + 9) = *(param1 + 9);
+    *(param1 + 9) = v9;
+    long v10 = *(param0 + 10);
+    *(param0 + 10) = *(param1 + 10);
+    *(param1 + 10) = v10;
+    int v11 = *(int*)(param0 + 11);
+    *(int*)(param0 + 11) = *(int*)(param1 + 11);
+    *(int*)(param1 + 11) = v11;
+    long v12 = *(param0 + 12);
+    *(param0 + 12) = *(param1 + 12);
+    *(param1 + 12) = v12;
+    long v13 = *(param0 + 13);
+    *(param0 + 13) = *(param1 + 13);
+    *(param1 + 13) = v13;
+    long v14 = *(param0 + 14);
+    *(param0 + 14) = *(param1 + 14);
+    *(param1 + 14) = v14;
+    long v15 = *(param0 + 0xF);
+    *(param0 + 0xF) = *(param1 + 0xF);
+    *(param1 + 0xF) = v15;
+    int v16 = *(int*)(param0 + 16);
+    *(int*)(param0 + 16) = *(int*)(param1 + 16);
+    *(int*)(param1 + 16) = v16;
+    return param0;
+}

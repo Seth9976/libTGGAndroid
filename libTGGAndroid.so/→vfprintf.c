@@ -1,0 +1,3 @@
+void →vfprintf() {
+    // Decompilation error
+}

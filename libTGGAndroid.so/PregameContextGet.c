@@ -1,0 +1,3 @@
+long PregameContextGet() {
+    return &gPregameContext;
+}

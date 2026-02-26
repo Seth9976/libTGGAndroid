@@ -1,0 +1,3 @@
+void GetClient() {
+    // Decompilation error
+}

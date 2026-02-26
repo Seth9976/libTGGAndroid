@@ -1,0 +1,3 @@
+long AppGetSysPath() {
+    return &gAssetSysPath;
+}

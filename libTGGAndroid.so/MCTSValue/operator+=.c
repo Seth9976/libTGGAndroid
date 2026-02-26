@@ -1,0 +1,54 @@
+// Package: MCTSValue
+
+float* MCTSValue::operator+=(float* param0, float* param1) {
+    float v0 = *(param0 + 1);
+    *param0 += *param1;
+    float v1 = *(param0 + 7);
+    *(param0 + 6) += *(param1 + 6);
+    float v2 = *(param0 + 13);
+    *(param0 + 12) += *(param1 + 12);
+    float v3 = *(param0 + 19);
+    *(param0 + 18) += *(param1 + 18);
+    float v4 = *(param0 + 25);
+    *(param0 + 24) += *(param1 + 24);
+    *(param0 + 1) = *(param1 + 1) + v0;
+    float v5 = *(param0 + 2);
+    float v6 = *(param0 + 3);
+    *(param0 + 7) = *(param1 + 7) + v1;
+    *(param0 + 13) = *(param1 + 13) + v2;
+    *(param0 + 19) = *(param1 + 19) + v3;
+    *(param0 + 25) = *(param1 + 25) + v4;
+    *(param0 + 2) = *(param1 + 2) + v5;
+    float v7 = *(param0 + 9);
+    *(param0 + 8) += *(param1 + 8);
+    float v8 = *(param0 + 0xF);
+    *(param0 + 14) += *(param1 + 14);
+    float v9 = *(param0 + 21);
+    *(param0 + 20) += *(param1 + 20);
+    float v10 = *(param0 + 27);
+    *(param0 + 26) += *(param1 + 26);
+    *(param0 + 3) = *(param1 + 3) + v6;
+    float v11 = *(param0 + 4);
+    float v12 = *(param0 + 5);
+    *(param0 + 9) = *(param1 + 9) + v7;
+    *(param0 + 0xF) = *(param1 + 0xF) + v8;
+    *(param0 + 21) = *(param1 + 21) + v9;
+    *(param0 + 27) = *(param1 + 27) + v10;
+    *(param0 + 4) = *(param1 + 4) + v11;
+    float v13 = *(param0 + 11);
+    *(param0 + 10) += *(param1 + 10);
+    float v14 = *(param0 + 17);
+    *(param0 + 16) += *(param1 + 16);
+    float v15 = *(param0 + 23);
+    *(param0 + 22) += *(param1 + 22);
+    float v16 = *(param0 + 29);
+    *(param0 + 28) += *(param1 + 28);
+    float v17 = *(param0 + 30);
+    *(param0 + 5) = *(param1 + 5) + v12;
+    *(param0 + 11) = *(param1 + 11) + v13;
+    *(param0 + 17) = *(param1 + 17) + v14;
+    *(param0 + 23) = *(param1 + 23) + v15;
+    *(param0 + 29) = *(param1 + 29) + v16;
+    *(param0 + 30) = *(param1 + 30) + v17;
+    return param0;
+}

@@ -1,0 +1,3 @@
+void GetActiveProfile() {
+    // Decompilation error
+}

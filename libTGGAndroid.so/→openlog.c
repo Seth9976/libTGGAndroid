@@ -1,0 +1,3 @@
+void →openlog() {
+    // Decompilation error
+}

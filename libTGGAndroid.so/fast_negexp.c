@@ -1,0 +1,2 @@
+void fast_negexp() {
+}

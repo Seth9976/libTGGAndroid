@@ -1,0 +1,3 @@
+void AllowedImbalanced() {
+    // Decompilation error
+}

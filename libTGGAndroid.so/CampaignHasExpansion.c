@@ -1,0 +1,3 @@
+void CampaignHasExpansion() {
+    // Decompilation error
+}

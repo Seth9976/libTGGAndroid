@@ -1,0 +1,37 @@
+float* Mat4RemoveScale(double* param0, float* param1, float* param2) {
+    float v0 = *param1 * *param1 + *(param1 + 1) * *(param1 + 1) + *(param1 + 2) * *(param1 + 2);
+    FSQRT(*param1 * *param1 + *(param1 + 1) * *(param1 + 1) + *(param1 + 2) * *(param1 + 2), *param1 * *param1 + *(param1 + 1) * *(param1 + 1) + *(param1 + 2) * *(param1 + 2));
+    *param2 = v0;
+    float v1 = *(param1 + 4);
+    float v2 = *(param1 + 5);
+    float v3 = *(param1 + 6);
+    float v4 = v1 * v1 + v2 * v2 + v3 * v3;
+    FSQRT(v1 * v1 + v2 * v2 + v3 * v3, v1 * v1 + v2 * v2 + v3 * v3);
+    *(param2 + 1) = v4;
+    float v5 = *(param1 + 8);
+    float v6 = *(param1 + 9);
+    float v7 = *(param1 + 10);
+    float v8 = v5 * v5 + v6 * v6 + v7 * v7;
+    FSQRT(v5 * v5 + v6 * v6 + v7 * v7, v5 * v5 + v6 * v6 + v7 * v7);
+    *(param2 + 2) = v8;
+    __int128 v9 = (unsigned __int128)*(double*)param1;
+    float v10 = *(param1 + 3);
+    __int128 v11 = (unsigned __int128)*(double*)(param1 + 4);
+    float v12 = *(param1 + 7);
+    __int128 v13 = (unsigned __int128)*(double*)(param1 + 8);
+    float v14 = (float)(1.0 / v0) * *(param1 + 2);
+    float v15 = (float)(1.0 / v4) * *(param1 + 6);
+    float v16 = (float)(1.0 / v8) * *(param1 + 10);
+    float v17 = *(param1 + 0xF);
+    *(long double*)((char*)param0 + 44L) = *(long double*)(param1 + 11);
+    *param0 = (uint64_t)((uint32_t)v9 * (float)(1.0 / v0)) | ((uint64_t)((uint32_t)(v9 >>> 0x20X) * (float)(1.0 / v0)) << 32);
+    *(float*)(param0 + 1) = v14;
+    *(float*)((char*)param0 + 12L) = v10;
+    *(param0 + 2) = (uint64_t)((uint32_t)v11 * (float)(1.0 / v4)) | ((uint64_t)((uint32_t)(v11 >>> 0x20X) * (float)(1.0 / v4)) << 32);
+    *(float*)(param0 + 3) = v15;
+    *(float*)((char*)param0 + 28L) = v12;
+    *(param0 + 4) = (uint64_t)((uint32_t)v13 * (float)(1.0 / v8)) | ((uint64_t)((uint32_t)(v13 >>> 0x20X) * (float)(1.0 / v8)) << 32);
+    *(float*)(param0 + 5) = v16;
+    *(float*)((char*)param0 + 60L) = v17;
+    return param1;
+}

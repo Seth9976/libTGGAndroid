@@ -1,0 +1,72 @@
+int* TestSetPotential(int* param0, int param1, int param2, int* param3, uint32_t param4, int param5, int param6, int* param7) {
+    int v0;
+    int* ptr0;
+    int* ptr1;
+    if(param1 == param2) {
+        ptr1 = (uint64_t)*(param7 + 516);
+        ptr0 = ((uint64_t)*(param7 + 516) | ((uint64_t)((long*)((long)(long*)((long)ptr1 >>> 31L) & 0x1L) ? -1: 0) << 32)) * 1032L + (long)param7;
+        *(ptr0 + 0x101) = param6;
+        if((int)param4 >= 1) {
+            long v1 = 0L;
+            int* ptr2 = (int*)((long)(uint32_t)ptr1 * 1032L + (long)param7);
+            do {
+                long v2 = (uint64_t)*(param0 + 1354);
+                if(*(param0 + 1354) >= 1) {
+                    int v3 = *(int*)(v1 * 4L + (long)param3);
+                    if(*(int*)(v1 * 4L + (long)param3) == *(param0 + 1692)) {
+                    loc_6FF698:
+                        v0 = *(ptr0 + 0x100);
+                        *(ptr0 + 0x100) = v0 + 1;
+                        *(int*)(v0 * 4L + (long)ptr2) = v3;
+                    }
+                    else {
+                        long v4 = 0L;
+                        int* ptr3 = param0 + 0x6b6;
+                        while(v2 - 1L != v4) {
+                            param6 = *ptr3;
+                            ptr3 += 26;
+                            ++v4;
+                            if(param6 != v3) {
+                                continue;
+                            }
+                            if(v2 <= v4) {
+                                break;
+                            }
+                            goto loc_6FF698;
+                        }
+                    }
+                }
+                ++v1;
+            }
+            while(param4 != v1);
+            ptr1 = (uint64_t)*(param7 + 516);
+        }
+        *(param7 + 516) = (uint32_t)ptr1 + 1;
+    }
+    if((int)param4 >= 1) {
+        if(*param3 == param1) {
+        loc_6FF754:
+            int* ptr4 = (int*)(*(param7 + 516) * 1032L + (long)param7);
+            v0 = *(ptr4 + 0x100);
+            *(ptr4 + 0x101) = param5;
+            *(ptr4 + 0x100) = v0 + 1;
+            *(int*)((long)(long*)((long)v0 * 4L) + (long)ptr4) = param2;
+            ++*(param7 + 516);
+        }
+        else {
+            ptr0 = &g1;
+            do {
+                ptr1 = ptr0;
+                if(param4 == ptr0) {
+                    break;
+                }
+                ptr0 = (char*)ptr1 + 1L;
+            }
+            while(*(int*)((long)(long*)((long)ptr1 * 4L) + (long)param3) != param1);
+            if(param4 > (uint64_t)ptr1) {
+                goto loc_6FF754;
+            }
+        }
+    }
+    return param0;
+}

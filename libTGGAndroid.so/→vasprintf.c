@@ -1,0 +1,3 @@
+void →vasprintf() {
+    // Decompilation error
+}

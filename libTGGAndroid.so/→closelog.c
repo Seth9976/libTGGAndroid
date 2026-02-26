@@ -1,0 +1,3 @@
+void →closelog() {
+    // Decompilation error
+}

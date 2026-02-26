@@ -1,0 +1,3 @@
+void →syslog() {
+    // Decompilation error
+}

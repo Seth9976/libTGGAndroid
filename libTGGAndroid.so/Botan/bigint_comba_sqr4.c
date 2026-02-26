@@ -1,0 +1,55 @@
+// Package: Botan
+
+int* Botan::bigint_comba_sqr4(int* param0, int* param1) {
+    long v0 = (uint64_t)*param1;
+    *param0 = *param1 * *param1;
+    long v1 = ((uint64_t)*(param1 + 1) * (uint64_t)*param1) >>> 63L;
+    int v2 = (uint32_t)((uint64_t)(((*(param1 + 1) * *param1) >>> 31) & 1) | ((uint64_t)(uint32_t)(((uint64_t)*(param1 + 1) * (uint64_t)*param1) >>> 32L) << 1) | ((uint64_t)0 << 33));
+    int v3 = __carry__(*(param1 + 1) * *param1 * 2, (uint32_t)((v0 * v0) >>> 32L));
+    *(param0 + 1) = *(param1 + 1) * *param1 * 2 + (uint32_t)((v0 * v0) >>> 32L);
+    int v4 = v2 + v3;
+    long v5 = (uint64_t)*(param1 + 1);
+    int v6 = __carry__(v2, v3) ? (uint32_t)v1 + 1: (uint32_t)v1;
+    long v7 = ((uint64_t)*(param1 + 2) * (uint64_t)*param1) >>> 63L;
+    int v8 = __carry__(*(param1 + 2) * *param1 * 2, v4);
+    long v9 = v5 * v5 + (uint64_t)(*(param1 + 2) * *param1 * 2 + v4);
+    int v10 = (uint32_t)((uint64_t)(((*(param1 + 2) * *param1) >>> 31) & 1) | ((uint64_t)(uint32_t)(((uint64_t)*(param1 + 2) * (uint64_t)*param1) >>> 32L) << 1) | ((uint64_t)0 << 33));
+    *(param0 + 2) = (uint32_t)v9;
+    int v11 = v6 + v10;
+    int v12 = v8 + v11;
+    int v13 = (__carry__(v6, v10) | __carry__(v8, v11)) + (uint32_t)v7;
+    int v14 = *(param1 + 3) * *param1 * 2 + (uint32_t)(v9 >>> 32L) + v12;
+    int v15 = (uint32_t)((uint64_t)(((*(param1 + 3) * *param1) >>> 31) & 1) | ((uint64_t)(uint32_t)(((uint64_t)*(param1 + 3) * (uint64_t)*param1) >>> 32L) << 1) | ((uint64_t)0 << 33));
+    int v16 = (uint32_t)(((uint64_t)*(param1 + 1) * (uint64_t)*(param1 + 2)) >>> 63L) + (uint32_t)(((uint64_t)*(param1 + 3) * (uint64_t)*param1) >>> 63L);
+    int v17 = __carry__((uint32_t)(v9 >>> 32L) + v12, *(param1 + 3) * *param1 * 2);
+    int v18 = __carry__((uint32_t)(v9 >>> 32L), v12) ? v13 + 1: v13;
+    int v19 = v15 + v18;
+    int v20 = v15 + v17 + v18;
+    int v21 = (uint32_t)((uint64_t)(((*(param1 + 1) * *(param1 + 2)) >>> 31) & 1) | ((uint64_t)(uint32_t)(((uint64_t)*(param1 + 1) * (uint64_t)*(param1 + 2)) >>> 32L) << 1) | ((uint64_t)0 << 33));
+    int v22 = __carry__(*(param1 + 1) * *(param1 + 2) * 2, v14);
+    *(param0 + 3) = *(param1 + 1) * *(param1 + 2) * 2 + v14;
+    int v23 = v20 + v21;
+    long v24 = (uint64_t)*(param1 + 2);
+    int v25 = v22 + v23;
+    long v26 = ((uint64_t)*(param1 + 1) * (uint64_t)*(param1 + 3)) >>> 63L;
+    int v27 = (uint32_t)((uint64_t)(((*(param1 + 1) * *(param1 + 3)) >>> 31) & 1) | ((uint64_t)(uint32_t)(((uint64_t)*(param1 + 1) * (uint64_t)*(param1 + 3)) >>> 32L) << 1) | ((uint64_t)0 << 33));
+    long v28 = v24 * v24 + (uint64_t)(*(param1 + 1) * *(param1 + 3) * 2 + v25);
+    int v29 = __carry__(*(param1 + 1) * *(param1 + 3) * 2, v25);
+    int v30 = (__carry__(v20, v21) | __carry__(v22, v23)) + (__carry__(v15, v18) | __carry__(v17, v19)) + v16;
+    int v31 = (__carry__(v20, v21) | __carry__(v22, v23)) + (__carry__(v15, v18) | __carry__(v17, v19)) + (v27 + v16);
+    *(param0 + 4) = (uint32_t)v28;
+    char v32 = __carry__(v31, v29);
+    int v33 = v31 + v29;
+    int v34 = __carry__((uint32_t)(v28 >>> 32L), v33) ? (__carry__(v27, v30) | v32) + (uint32_t)v26 + 1: (__carry__(v27, v30) | v32) + (uint32_t)v26;
+    char v35 = __carry__((uint32_t)(v28 >>> 32L) + v33, *(param1 + 2) * *(param1 + 3) * 2);
+    long v36 = ((uint64_t)*(param1 + 2) * (uint64_t)*(param1 + 3)) >>> 63L;
+    int v37 = (uint32_t)((uint64_t)(((*(param1 + 2) * *(param1 + 3)) >>> 31) & 1) | ((uint64_t)(uint32_t)(((uint64_t)*(param1 + 2) * (uint64_t)*(param1 + 3)) >>> 32L) << 1) | ((uint64_t)0 << 33));
+    *(param0 + 5) = *(param1 + 2) * *(param1 + 3) * 2 + (uint32_t)(v28 >>> 32L) + v33;
+    long v38 = (uint64_t)*(param1 + 3);
+    uint32_t v39 = (uint32_t)(v34 + v37);
+    int v40 = (v35 ? v39 >= -1: 1);
+    long v41 = v38 * v38 + (v35 ? v39 + 1: v39);
+    *(param0 + 6) = (uint32_t)v41;
+    *(param0 + 7) = (uint32_t)(v41 >>> 32L) + (uint32_t)v36 + (__carry__(v34, v37) ? v40 | 1: v40);
+    return param0;
+}

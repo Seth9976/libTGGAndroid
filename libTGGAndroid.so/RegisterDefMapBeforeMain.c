@@ -1,0 +1,3 @@
+void RegisterDefMapBeforeMain() {
+    // Decompilation error
+}

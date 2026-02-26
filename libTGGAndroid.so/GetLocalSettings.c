@@ -1,0 +1,3 @@
+void GetLocalSettings() {
+    // Decompilation error
+}

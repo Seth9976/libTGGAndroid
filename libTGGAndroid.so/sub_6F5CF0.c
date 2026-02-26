@@ -1,0 +1,5 @@
+long* sub_6F5CF0(long* param0, long* param1) {
+    *param1 = &vftable_std::__ndk1::__function::__func<TrashOne(DomCardType, DomChoiceUIType)::$_4, std::__ndk1::allocator<TrashOne(DomCardType, DomChoiceUIType)::$_4>, bool (CardID)>;
+    *(param1 + 1) = *(param0 + 1);
+    return param0;
+}

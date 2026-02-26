@@ -1,0 +1,38 @@
+long sub_D12DC8(uint64_t* param0) {
+    uint64_t* ptr0 = *(param0 + 33);
+    *(param0 + 2) = *(ptr0 + 39);
+    *(param0 + 3) = *(ptr0 + 40);
+    *(param0 + 4) = *(ptr0 + 41);
+    *(param0 + 5) = *(ptr0 + 42);
+    *(param0 + 6) = *(ptr0 + 43);
+    *(param0 + 7) = *(ptr0 + 44);
+    *(param0 + 8) = *(ptr0 + 45);
+    *(param0 + 9) = *(ptr0 + 46);
+    *(param0 + 10) = *(ptr0 + 47);
+    *(param0 + 11) = *(ptr0 + 48);
+    *(param0 + 12) = *(ptr0 + 49);
+    *(param0 + 13) = *(ptr0 + 50);
+    *(param0 + 14) = *(ptr0 + 51);
+    *(param0 + 0xF) = *(ptr0 + 52);
+    *(param0 + 16) = *(ptr0 + 53);
+    *(param0 + 17) = *(ptr0 + 54);
+    *(param0 + 18) = *(ptr0 + 55);
+    *(param0 + 19) = *(ptr0 + 56);
+    *(param0 + 20) = *(ptr0 + 57);
+    *(param0 + 21) = *(ptr0 + 58);
+    *(param0 + 22) = *(ptr0 + 59);
+    *(param0 + 23) = *(ptr0 + 60);
+    *(param0 + 24) = *(ptr0 + 61);
+    *(param0 + 25) = *(ptr0 + 62);
+    *(param0 + 26) = *(ptr0 + 0x3F);
+    *(param0 + 27) = *(ptr0 + 64);
+    *(param0 + 28) = *(ptr0 + 65);
+    *(param0 + 29) = *(ptr0 + 66);
+    *(param0 + 30) = *(ptr0 + 67);
+    *(param0 + 31) = *(ptr0 + 68);
+    *(param0 + 32) = *(ptr0 + 69);
+    *(param0 + 33) = *(ptr0 + 70);
+    *(param0 + 34) = *(ptr0 + 71);
+    *(uint8_t*)((uint8_t*)param0 + 617L) = 1;
+    return 1L;
+}

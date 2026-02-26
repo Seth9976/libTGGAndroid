@@ -1,0 +1,3 @@
+void GetActiveTutorial() {
+    // Decompilation error
+}

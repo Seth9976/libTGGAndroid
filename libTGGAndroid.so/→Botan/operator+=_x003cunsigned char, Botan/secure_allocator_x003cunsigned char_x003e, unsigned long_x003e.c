@@ -1,0 +1,3 @@
+std::__ndk1::vector<unsigned char, Botan::secure_allocator<unsigned char> >&* →Botan::operator+=<unsigned char, Botan::secure_allocator<unsigned char>, unsigned long>(std::__ndk1::vector<unsigned char, Botan::secure_allocator<unsigned char> >&* param0, std::__ndk1::vector<unsigned char, Botan::secure_allocator<unsigned char> >& param1, std::__ndk1::pair<unsigned char const*, unsigned long> const& param2) {
+    return ptr__ZN5BotanpLIhNS_16secure_allocatorIhEEmEERNSt6__ndk16vectorIT_T0_EES8_RKNS3_4pairIPKS5_T1_EE{Botan::operator+=<unsigned char, Botan::secure_allocator<unsigned char>, unsigned long>}(param0, param1, param2);
+}

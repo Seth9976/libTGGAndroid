@@ -1,0 +1,11 @@
+// Package: Botan::RSA_PrivateKey
+
+uint64_t* Botan::RSA_PrivateKey::private_data(uint64_t* param0, uint64_t* param1) {
+    long* ptr0 = *(param1 + 5);
+    *param0 = *(param1 + 4);
+    *(param0 + 1) = ptr0;
+    if(ptr0 != 0L) {
+        ++*(ptr0 + 1);
+    }
+    return param1;
+}

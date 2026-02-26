@@ -1,0 +1,3 @@
+long CampaignContextGetRNG() {
+    return &gCampaignSetup;
+}

@@ -1,0 +1,3 @@
+long botan_version_datestamp() {
+    return 20210415L;
+}

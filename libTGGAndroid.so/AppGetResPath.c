@@ -1,0 +1,3 @@
+long AppGetResPath() {
+    return &gAssetResPath;
+}

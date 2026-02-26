@@ -1,0 +1,2 @@
+void DivineWind_Setup() {
+}

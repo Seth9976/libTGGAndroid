@@ -1,0 +1,2 @@
+void Glicko_NewPlayer() {
+}

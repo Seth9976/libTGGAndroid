@@ -1,0 +1,3 @@
+void GameDlgManagerShow() {
+    // Decompilation error
+}
